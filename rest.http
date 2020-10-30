@@ -1,0 +1,39 @@
+###Tasks list Route
+GET http://localhost:5000/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDQwNDkxODUsImV4cCI6MTYzNTYwNjc4NSwiYXVkIjoiNWY5NmYyYjhhNWJjMDczMThjYjQwMWZhIn0.XvA1o0i2ihp2DpMwqNbJqLhcOQIh8vpTxHV3R4J_wyY
+
+
+###Login Route
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "kiffki97@gmail.com",
+  "password": "boboik"
+}
+
+###Register Route
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "giooo@gmail.com",
+  "password": "yohooik"
+}
+
+###Refresh token Route
+POST http://localhost:5000/api/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDQwMDUxMTEsImV4cCI6MTYzNTU2MjcxMSwiYXVkIjoiNWY5NmYyYjhhNWJjMDczMThjYjQwMWZhIn0.FzHKKeyA6U6nXVMZjTFzit4i3pB2c_MAbY03LOFh6fE"
+}
+
+###Logout Route
+DELETE http://localhost:5000/api/auth/logout
+Content-Type: application/json
+
+
+{
+   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDQwNDQ4OTYsImV4cCI6MTYzNTYwMjQ5NiwiYXVkIjoiNWY5NmYyYjhhNWJjMDczMThjYjQwMWZhIn0.VC0AAqe-TsJQIiZpPqT4kLo81oSWMkTOa7nFrt9j9Ow"
+}
